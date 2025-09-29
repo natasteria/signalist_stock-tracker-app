@@ -47,6 +47,7 @@ const SignUp = () => {
                 <InputField
                     name="email"
                     label="Email"
+                    type="email"
                     placeholder="contact@jsmastery.com"
                     register={register}
                     error={errors.email}
