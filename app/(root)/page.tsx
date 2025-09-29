@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="md:col-span-1 xl:col-span-1">
                     <TradingViewWidget title="Market Overview"
                                        scriptURL={`${scriptURL}market-overview.js`}
-                                       config={MARKET_DATA_WIDGET_CONFIG} className="custom-chart"/>
+                                       config={MARKET_OVERVIEW_WIDGET_CONFIG} className="custom-chart"/>
                 </div>
                 <div className="md:col-span-1 xl:col-span-2">
                     <TradingViewWidget title="Stock Heatmap"
