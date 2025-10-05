@@ -53,8 +53,12 @@ const UserDropdown = ({user}: {user: User}) => {
 
                 <DropdownMenuSeparator className="bg-gray-600"/>
 
-                <DropdownMenuItem onClick={handleSignOut} className="text-gray-100 text-md font-medium focus:bg-transparent focus:text-yellow-500 transition-colors cursor-pointer">
-                    <LogOut className="hidden sm:block size-4 mr-2 " /> Logout
+                <DropdownMenuItem asChild>
+                    <form action={handleSignOut}>
+                        <button type="submit" className="w-full text-md font-medium text-left flex items-center gap-2 text-gray-100  hover:text-yellow-500 transition-colors cursor-pointer">
+                            <LogOut className="hidden sm:block size-4 mr-2 color-gray-900" /> Logout
+                        </button>
+                    </form>
                 </DropdownMenuItem>
 
                 <nav className="sm:hidden">
